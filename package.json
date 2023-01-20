@@ -1,0 +1,30 @@
+{
+  "name": "remote_control_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "webpack",
+    "start:prod": "webpack && node ./dist/bundle.js",
+    "start:prod:multi": "npm run start:prod -- --multi",
+    "start:dev": "nodemon",
+    "start:multi": "nodemon -- --multi",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElenaBezro/Remote_control_backend.git"
+  },
+  "author": "Elena Bezrodnova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElenaBezro/Remote_control_backend/issues"
+  },
+  "homepage": "https://github.com/ElenaBezro/Remote_control_backend#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "ws": "^8.12.0"
+  }
+}
